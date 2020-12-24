@@ -1,0 +1,147 @@
+/* Variables  */
+:root {
+    --medium-margin: 10px;
+    --large-margin: 18px;
+}
+
+/* Styles */
+body {
+    font-family: 'Consolas', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    background-color: dimgray;
+    font-size: 1.2em;
+    color: darkgray;
+    text-align:center;
+}
+.left {
+    text-align: left;
+}
+#fav{
+    height: 100px;
+    width: 100px;
+    float:left;
+}
+
+h1 {
+    padding: 15px;
+    color: black;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
+
+
+}
+.info{
+    width: 600px;
+    margin: auto;
+}
+
+a{
+    margin-left: var(--medium-margin);
+    color: black;
+
+}
+.pos{
+    padding: 18px;
+}
+
+nav{
+    background-color: dimgray;
+    width: 100%;
+    font-size: 1.2em;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: .8;
+   }
+a:hover{
+    color: white;
+
+}
+
+#sub{
+    width: 20px;
+    margin:auto;
+
+}
+.submit:hover{
+    background-color: dimgray;
+}
+#top{
+    visibility: hidden;
+}
+.link:hover{
+    color: black;
+}
+#home{
+    padding: 50px;
+    border-width: 10px;
+    margin: auto;
+    width: 390px;
+    border-style: solid;
+    background-color: lightgrey;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    border-radius: 400px;
+    border-color: black;
+
+}
+input{
+    margin:20px;
+}
+
+hr{
+    display: block;
+    margin: 10px;
+
+}
+.space{
+    margin-top: 200px;
+}
+.line{
+    background-color: black;
+    width: 500px;
+    height: 2px;
+    position: relative;
+    left: 30px;
+
+}
+
+
+.submit{
+    text-align:center;
+}
+
+img.bg {
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+@media screen and (max-width: 1024px){
+    img.bg {
+        left: 50%;
+        margin-left: -512px;
+    }
+}
+
+
+    #page-wrap {
+        position: relative;
+        width: 600px;
+        height: 1200px;
+        margin: 200px auto;
+        padding: 20px;
+        background: white;
+        -moz-box-shadow: 0 0 20px black;
+        -webkit-box-shadow: 0 0 20px black;
+        box-shadow: 0 0 20px black;
+        line-height: 40px;
+    }
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet"
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+              integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+              crossorigin="anonymous">
+
+        <link rel="stylesheet" type="text/css" href="../static/css/main.css">
+
+
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.io') }}">
+
+
+        {% if title %}
+            <title>{{ title }} – Pets for All</title>
+        {% else %}
+            <title>Pets for All </title>
+        {% endif %}
+
+    </head>
+
+    <body>
+        <nav>
+            <p class = "left" ><img src="../static/favicon.ico" alt="Logo" id = "fav"/></p>
+            <div class = "pos">
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('page2') }}">Dog Catalogue</a>
+                <a href="{{ url_for('page3') }}">Adoption Request Form</a>
+            </div>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+
+        </footer>
+    </body>
+
+</html>
